@@ -2064,6 +2064,7 @@ label {
         position: fixed;
         right: 0;
         top: 40%;
+        max-width: 40px;
         -webkit-transition: all 0.2s;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);

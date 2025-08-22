@@ -2743,6 +2743,7 @@ label {
     font-size: 18px;
     cursor: pointer;
     z-index: 10000;
+    max-width: 40px;
 }
 
 .cs_toggle .setting_mode {
@@ -2752,6 +2753,7 @@ label {
     -webkit-transition: all 0.2s;
     transform: translateY(-50%);
     transition: all 0.2s;
+    max-width: 40px;
 }
 
 .cs_toggle .setting_mode button {

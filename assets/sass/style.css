@@ -2571,11 +2571,13 @@ label {
   -webkit-transition: all 0.2s;
   transform: translateY(-50%);
   transition: all 0.2s;
+  max-width: 40px;
 }
 .cs_toggle .setting_mode button {
   border: none;
   background-color: #2b2b2f;
   padding: 10px;
+  max-width: 40px;
 }
 .cs_toggle .setting_mode button img {
   width: 100%;
