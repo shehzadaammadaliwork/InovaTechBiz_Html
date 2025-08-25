@@ -7124,6 +7124,10 @@ label {
 
 .cs_service_details .cs_service_details_text .anim_text_upanddowns {
     margin-top: 40px;
+    
+}
+.footer_email {
+    font-size: 22px;
 }
 
 .cs_service_details.cs_type_2 {
