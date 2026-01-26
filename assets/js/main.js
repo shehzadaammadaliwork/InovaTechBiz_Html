@@ -1128,5 +1128,271 @@
     });
   }
 
+  /*--------------------------------------------------------------
+       33. Dynamic Industry Hero - Tab Switching
+  --------------------------------------------------------------*/
+  if ($.exists(".cs_dynamic_hero")) {
+    const industryTabs = document.querySelectorAll('.cs_industry_tab');
+    const heroPanels = document.querySelectorAll('.cs_hero_panel');
+    const bgSlides = document.querySelectorAll('.cs_hero_bg_slide');
+
+    let autoPlayInterval;
+    let currentIndex = 0;
+    const autoPlayDuration = 6000; // 6 seconds per slide
+
+    // Function to switch industry
+    function switchIndustry(targetIndustry) {
+      // Remove active class from all tabs
+      industryTabs.forEach(tab => {
+        tab.classList.remove('active');
+        // Reset progress bar animation
+        const progress = tab.querySelector('.cs_tab_progress');
+        if (progress) {
+          progress.style.animation = 'none';
+          progress.offsetHeight; // Trigger reflow
+          progress.style.animation = '';
+        }
+      });
+
+      // Remove active class from all panels and backgrounds
+      heroPanels.forEach(panel => panel.classList.remove('active'));
+      bgSlides.forEach(slide => slide.classList.remove('active'));
+
+      // Add active class to target elements
+      const targetTab = document.querySelector(`.cs_industry_tab[data-target="${targetIndustry}"]`);
+      const targetPanel = document.querySelector(`.cs_hero_panel[data-panel="${targetIndustry}"]`);
+      const targetBg = document.querySelector(`.cs_hero_bg_slide[data-industry="${targetIndustry}"]`);
+
+      if (targetTab) targetTab.classList.add('active');
+      if (targetPanel) targetPanel.classList.add('active');
+      if (targetBg) targetBg.classList.add('active');
+
+      // Update current index
+      industryTabs.forEach((tab, index) => {
+        if (tab.dataset.target === targetIndustry) {
+          currentIndex = index;
+        }
+      });
+    }
+
+    // Auto-play functionality
+    function startAutoPlay() {
+      autoPlayInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % industryTabs.length;
+        const nextTarget = industryTabs[currentIndex].dataset.target;
+        switchIndustry(nextTarget);
+      }, autoPlayDuration);
+    }
+
+    function stopAutoPlay() {
+      clearInterval(autoPlayInterval);
+    }
+
+    function resetAutoPlay() {
+      stopAutoPlay();
+      startAutoPlay();
+    }
+
+    // Tab click handlers
+    industryTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const target = this.dataset.target;
+        switchIndustry(target);
+        resetAutoPlay();
+      });
+
+      // Keyboard accessibility
+      tab.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          const target = this.dataset.target;
+          switchIndustry(target);
+          resetAutoPlay();
+        }
+      });
+
+      // Add tabindex for accessibility
+      tab.setAttribute('tabindex', '0');
+      tab.setAttribute('role', 'tab');
+    });
+
+    // Pause on hover
+    const heroSection = document.querySelector('.cs_dynamic_hero');
+    heroSection.addEventListener('mouseenter', stopAutoPlay);
+    heroSection.addEventListener('mouseleave', startAutoPlay);
+
+    // Start auto-play on load
+    startAutoPlay();
+
+    // Intersection Observer - pause when not visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startAutoPlay();
+        } else {
+          stopAutoPlay();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(heroSection);
+  }
+
+  /*--------------------------------------------------------------
+  34. Professional Industries Section
+  --------------------------------------------------------------*/
+  if ($.exists(".cs_industries_pro")) {
+    const industryProTabs = document.querySelectorAll('.cs_industry_pro_tab');
+    const industryProPanels = document.querySelectorAll('.cs_industry_pro_panel');
+    let industryProInterval;
+    let industryProIndex = 0;
+    const industryProDuration = 6000;
+
+    function switchIndustryPro(targetIndustry) {
+      // Remove active class from all tabs and panels
+      industryProTabs.forEach(tab => {
+        tab.classList.remove('active');
+        const progress = tab.querySelector('.cs_industry_pro_tab_progress');
+        if (progress) {
+          progress.style.animation = 'none';
+          progress.offsetHeight;
+          progress.style.animation = '';
+        }
+      });
+      industryProPanels.forEach(panel => panel.classList.remove('active'));
+
+      // Add active class to target elements
+      const targetTab = document.querySelector(`.cs_industry_pro_tab[data-target="${targetIndustry}"]`);
+      const targetPanel = document.querySelector(`.cs_industry_pro_panel[data-panel="${targetIndustry}"]`);
+
+      if (targetTab) targetTab.classList.add('active');
+      if (targetPanel) targetPanel.classList.add('active');
+
+      // Update current index
+      industryProTabs.forEach((tab, index) => {
+        if (tab.dataset.target === targetIndustry) {
+          industryProIndex = index;
+        }
+      });
+    }
+
+    function startIndustryProAutoPlay() {
+      industryProInterval = setInterval(() => {
+        industryProIndex = (industryProIndex + 1) % industryProTabs.length;
+        const nextTarget = industryProTabs[industryProIndex].dataset.target;
+        switchIndustryPro(nextTarget);
+      }, industryProDuration);
+    }
+
+    function stopIndustryProAutoPlay() {
+      clearInterval(industryProInterval);
+    }
+
+    function resetIndustryProAutoPlay() {
+      stopIndustryProAutoPlay();
+      startIndustryProAutoPlay();
+    }
+
+    // Tab click handlers
+    industryProTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const target = this.dataset.target;
+        switchIndustryPro(target);
+        resetIndustryProAutoPlay();
+      });
+
+      tab.setAttribute('tabindex', '0');
+      tab.setAttribute('role', 'tab');
+    });
+
+    // Pause on hover
+    const industriesProSection = document.querySelector('.cs_industries_pro');
+    industriesProSection.addEventListener('mouseenter', stopIndustryProAutoPlay);
+    industriesProSection.addEventListener('mouseleave', startIndustryProAutoPlay);
+
+    // Start auto-play
+    startIndustryProAutoPlay();
+
+    // Intersection Observer
+    const industriesObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startIndustryProAutoPlay();
+        } else {
+          stopIndustryProAutoPlay();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    industriesObserver.observe(industriesProSection);
+  }
+
+  /*--------------------------------------------------------------
+  35. Professional Testimonial Section
+  --------------------------------------------------------------*/
+  if ($.exists(".cs_testimonial_pro")) {
+    const testimonialSlides = document.querySelectorAll('.cs_testimonial_pro_slide');
+    const workSlides = document.querySelectorAll('.cs_testimonial_pro_work_slide');
+    const clientAvatars = document.querySelectorAll('.cs_testimonial_pro_avatar_item');
+    const prevBtn = document.querySelector('.cs_testimonial_pro_nav_btn.prev');
+    const nextBtn = document.querySelector('.cs_testimonial_pro_nav_btn.next');
+    let testimonialIndex = 0;
+    const totalSlides = testimonialSlides.length;
+
+    function switchTestimonial(index) {
+      // Remove active class from all elements
+      testimonialSlides.forEach(slide => slide.classList.remove('active'));
+      workSlides.forEach(slide => slide.classList.remove('active'));
+      clientAvatars.forEach(avatar => avatar.classList.remove('active'));
+
+      // Add active class to current slide
+      if (testimonialSlides[index]) testimonialSlides[index].classList.add('active');
+      if (workSlides[index]) workSlides[index].classList.add('active');
+      if (clientAvatars[index]) clientAvatars[index].classList.add('active');
+
+      testimonialIndex = index;
+    }
+
+    // Navigation button handlers
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function() {
+        const newIndex = (testimonialIndex - 1 + totalSlides) % totalSlides;
+        switchTestimonial(newIndex);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function() {
+        const newIndex = (testimonialIndex + 1) % totalSlides;
+        switchTestimonial(newIndex);
+      });
+    }
+
+    // Client avatar click handlers
+    clientAvatars.forEach((avatar, index) => {
+      avatar.addEventListener('click', function() {
+        switchTestimonial(index);
+      });
+    });
+
+    // Auto-play testimonials
+    let testimonialInterval = setInterval(() => {
+      const newIndex = (testimonialIndex + 1) % totalSlides;
+      switchTestimonial(newIndex);
+    }, 5000);
+
+    // Pause on hover
+    const testimonialSection = document.querySelector('.cs_testimonial_pro');
+    testimonialSection.addEventListener('mouseenter', () => {
+      clearInterval(testimonialInterval);
+    });
+    testimonialSection.addEventListener('mouseleave', () => {
+      testimonialInterval = setInterval(() => {
+        const newIndex = (testimonialIndex + 1) % totalSlides;
+        switchTestimonial(newIndex);
+      }, 5000);
+    });
+  }
+
   // End of use strict
 })(jQuery);
