@@ -1,0 +1,2824 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="InnovaTechBiz" />
+
+    <!-- SEO Meta Tags -->
+    <title>ITB POS - Restaurant Management System | POS, Online Ordering, Delivery & More</title>
+    <meta name="description" content="ITB POS is the all-in-one restaurant management system featuring POS, online ordering, delivery management, inventory tracking, and staff management. Grow faster, manage smarter." />
+    <meta name="keywords" content="restaurant POS, restaurant management system, online ordering, delivery management, restaurant inventory, staff management, CRM, loyalty program, kitchen display, table management" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://innovatechbiz.com/itb-pos-home.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ITB POS - Restaurant Management System | POS, CRM & RMS" />
+    <meta property="og:description" content="Transform your restaurant operations with ITB POS's all-in-one solution. POS, online ordering, delivery, inventory, and staff management in one platform." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://innovatechbiz.com/itb-pos-home.html" />
+    <meta property="og:image" content="assets/img/blink/blink-og.jpg" />
+    <meta property="og:site_name" content="ITB POS by InnovaTechBiz" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ITB POS - Restaurant Management System" />
+    <meta name="twitter:description" content="All-in-one restaurant POS, online ordering, delivery, and management solution." />
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ITB POS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "description": "All-in-one restaurant management system featuring POS, online ordering, delivery management, inventory tracking, and staff management.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free trial available"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.95",
+            "reviewCount": "5000"
+        },
+        "provider": {
+            "@type": "Organization",
+            "name": "InnovaTechBiz",
+            "url": "https://innovatechbiz.com"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is ITB POS?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ITB POS is an all-in-one restaurant management system that includes point-of-sale, online ordering, delivery management, inventory tracking, staff management, and CRM features. It's designed to help restaurants streamline operations and increase revenue."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does ITB POS cost?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ITB POS offers flexible pricing plans starting with a free trial. Our plans range from $29/month for single locations to custom enterprise pricing for restaurant chains. All plans include core POS features, with premium plans adding advanced analytics, multi-location management, and priority support."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does ITB POS work offline?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, ITB POS has a robust offline mode. You can continue taking orders and processing cash payments even without internet. All data syncs automatically when your connection returns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What payment methods does ITB POS support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ITB POS supports all major payment methods including credit/debit cards via Stripe and Square, mobile wallets like bKash, Nagad, and Rocket in Bangladesh, as well as cash and split payments."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- ITB POS Specific Styles -->
+    <style>
+        :root {
+            --blink-primary: #6B46C1;
+            --blink-primary-dark: #553C9A;
+            --blink-primary-light: #7C3AED;
+            --blink-secondary: #EC4899;
+            --blink-accent: #8B5CF6;
+            --blink-dark: #1F2937;
+            --blink-gray: #F3F4F6;
+            --blink-light-purple: #EDE9FE;
+            --blink-text: #4B5563;
+            --blink-text-light: #6B7280;
+            --blink-white: #FFFFFF;
+            --blink-border: #E5E7EB;
+            --blink-gradient: linear-gradient(135deg, #6B46C1 0%, #7C3AED 50%, #8B5CF6 100%);
+            --blink-gradient-hover: linear-gradient(135deg, #553C9A 0%, #6B46C1 50%, #7C3AED 100%);
+        }
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--blink-white);
+            color: var(--blink-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .blink-page {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Typography */
+        .blink-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .blink-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        .blink-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--blink-border);
+            transition: all 0.3s ease;
+        }
+
+        .blink-nav.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blink-nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+
+        .blink-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .blink-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--blink-gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .blink-logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blink-dark);
+        }
+
+        .blink-nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .blink-nav-menu a {
+            color: var(--blink-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .blink-nav-menu a:hover {
+            color: var(--blink-primary);
+        }
+
+        .blink-nav-menu .has-dropdown {
+            position: relative;
+        }
+
+        .blink-nav-menu .has-dropdown > a::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid currentColor;
+            margin-left: 6px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .blink-nav-menu .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            padding: 12px 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .blink-nav-menu .has-dropdown:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .blink-nav-menu .dropdown a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .blink-nav-menu .dropdown a:hover {
+            background: var(--blink-light-purple);
+        }
+
+        .blink-nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .blink-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .blink-btn-primary {
+            background: var(--blink-gradient);
+            color: white;
+        }
+
+        .blink-btn-primary:hover {
+            background: var(--blink-gradient-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(107, 70, 193, 0.35);
+            color: white;
+        }
+
+        .blink-btn-secondary {
+            background: transparent;
+            color: var(--blink-primary);
+            border: 2px solid var(--blink-primary);
+        }
+
+        .blink-btn-secondary:hover {
+            background: var(--blink-primary);
+            color: white;
+        }
+
+        .blink-btn-white {
+            background: white;
+            color: var(--blink-primary);
+        }
+
+        .blink-btn-white:hover {
+            background: var(--blink-light-purple);
+            transform: translateY(-2px);
+        }
+
+        .blink-btn-large {
+            padding: 16px 32px;
+            font-size: 16px;
+        }
+
+        /* Mobile Menu Toggle */
+        .blink-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .blink-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--blink-dark);
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .blink-hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(180deg, var(--blink-light-purple) 0%, var(--blink-white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blink-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(107, 70, 193, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .blink-hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .blink-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .blink-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blink-primary);
+            box-shadow: 0 4px 15px rgba(107, 70, 193, 0.15);
+            margin-bottom: 24px;
+        }
+
+        .blink-hero-badge svg {
+            color: #F59E0B;
+        }
+
+        .blink-hero-title {
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 800;
+            color: var(--blink-dark);
+            margin-bottom: 24px;
+            line-height: 1.15;
+        }
+
+        .blink-hero-title span {
+            background: var(--blink-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .blink-hero-text {
+            font-size: 18px;
+            color: var(--blink-text);
+            margin-bottom: 32px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .blink-hero-ctas {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .blink-hero-stats {
+            display: flex;
+            gap: 40px;
+        }
+
+        .blink-hero-stat {
+            text-align: left;
+        }
+
+        .blink-hero-stat-value {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--blink-primary);
+        }
+
+        .blink-hero-stat-label {
+            font-size: 14px;
+            color: var(--blink-text-light);
+        }
+
+        .blink-hero-image {
+            position: relative;
+            z-index: 1;
+        }
+
+        .blink-hero-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(107, 70, 193, 0.2);
+        }
+
+        .blink-hero-devices {
+            position: relative;
+        }
+
+        .blink-device-tablet {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(107, 70, 193, 0.25);
+        }
+
+        .blink-device-phone {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 180px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Partners Section */
+        .blink-partners {
+            padding: 60px 0;
+            background: var(--blink-white);
+            border-bottom: 1px solid var(--blink-border);
+        }
+
+        .blink-partners-label {
+            text-align: center;
+            font-size: 14px;
+            color: var(--blink-text-light);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blink-partners-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .blink-partner-logo {
+            height: 40px;
+            opacity: 0.6;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .blink-partner-logo:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        /* Features Section */
+        .blink-features {
+            padding: 100px 0;
+            background: var(--blink-white);
+        }
+
+        .blink-section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .blink-section-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--blink-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
+        .blink-section-title {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+
+        .blink-section-text {
+            font-size: 17px;
+            color: var(--blink-text);
+            line-height: 1.7;
+        }
+
+        .blink-features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .blink-feature-card {
+            background: var(--blink-white);
+            border: 1px solid var(--blink-border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blink-feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--blink-gradient);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .blink-feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.15);
+            border-color: transparent;
+        }
+
+        .blink-feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .blink-feature-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--blink-light-purple);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .blink-feature-icon svg {
+            width: 32px;
+            height: 32px;
+            color: var(--blink-primary);
+        }
+
+        .blink-feature-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--blink-dark);
+            margin-bottom: 12px;
+        }
+
+        .blink-feature-text {
+            font-size: 15px;
+            color: var(--blink-text);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .blink-feature-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--blink-primary);
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: gap 0.3s ease;
+        }
+
+        .blink-feature-link:hover {
+            gap: 10px;
+        }
+
+        /* Testimonials Section */
+        .blink-testimonials {
+            padding: 100px 0;
+            background: var(--blink-gray);
+        }
+
+        .blink-testimonials-slider {
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .blink-testimonial-card {
+            background: var(--blink-white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .blink-testimonial-rating {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .blink-testimonial-rating svg {
+            width: 20px;
+            height: 20px;
+            color: #F59E0B;
+            fill: #F59E0B;
+        }
+
+        .blink-testimonial-quote {
+            font-size: 18px;
+            color: var(--blink-dark);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .blink-testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .blink-testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .blink-testimonial-name {
+            font-weight: 600;
+            color: var(--blink-dark);
+            font-size: 16px;
+        }
+
+        .blink-testimonial-role {
+            font-size: 14px;
+            color: var(--blink-text-light);
+        }
+
+        .blink-testimonials-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .blink-testimonials-nav button {
+            width: 48px;
+            height: 48px;
+            border: 2px solid var(--blink-border);
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .blink-testimonials-nav button:hover {
+            border-color: var(--blink-primary);
+            color: var(--blink-primary);
+        }
+
+        /* Results Section */
+        .blink-results {
+            padding: 100px 0;
+            background: var(--blink-dark);
+            color: white;
+        }
+
+        .blink-results .blink-section-title {
+            color: white;
+        }
+
+        .blink-results .blink-section-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .blink-results-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .blink-result-card {
+            text-align: center;
+            padding: 32px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .blink-result-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .blink-result-icon {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+
+        .blink-result-value {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--blink-accent);
+            margin-bottom: 8px;
+        }
+
+        .blink-result-label {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Contact Section */
+        .blink-contact {
+            padding: 100px 0;
+            background: var(--blink-light-purple);
+        }
+
+        .blink-contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .blink-contact-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 16px;
+        }
+
+        .blink-contact-content p {
+            font-size: 17px;
+            color: var(--blink-text);
+            margin-bottom: 30px;
+        }
+
+        .blink-contact-info {
+            list-style: none;
+        }
+
+        .blink-contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            color: var(--blink-dark);
+        }
+
+        .blink-contact-info svg {
+            width: 24px;
+            height: 24px;
+            color: var(--blink-primary);
+        }
+
+        .blink-contact-form {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.15);
+        }
+
+        .blink-form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .blink-form-group {
+            margin-bottom: 20px;
+        }
+
+        .blink-form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .blink-form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blink-dark);
+            margin-bottom: 8px;
+        }
+
+        .blink-form-input {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 15px;
+            border: 2px solid var(--blink-border);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .blink-form-input:focus {
+            outline: none;
+            border-color: var(--blink-primary);
+            box-shadow: 0 0 0 4px rgba(107, 70, 193, 0.1);
+        }
+
+        .blink-form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .blink-form-submit {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        .blink-footer {
+            background: var(--blink-dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .blink-footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .blink-footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 20px 0;
+        }
+
+        .blink-footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .blink-footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .blink-footer-social a:hover {
+            background: var(--blink-primary);
+            transform: translateY(-3px);
+        }
+
+        .blink-footer-col h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: white;
+        }
+
+        .blink-footer-links {
+            list-style: none;
+        }
+
+        .blink-footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .blink-footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .blink-footer-links a:hover {
+            color: white;
+        }
+
+        .blink-footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blink-footer-copyright {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .blink-footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .blink-footer-legal a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .blink-footer-legal a:hover {
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .animate-pulse:hover {
+            animation: pulse 0.5s ease;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .blink-hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .blink-hero-content {
+                order: 1;
+            }
+
+            .blink-hero-image {
+                order: 2;
+            }
+
+            .blink-hero-ctas {
+                justify-content: center;
+            }
+
+            .blink-hero-stats {
+                justify-content: center;
+            }
+
+            .blink-hero-text {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .blink-features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blink-results-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .blink-footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blink-nav-menu {
+                display: none;
+            }
+
+            .blink-menu-toggle {
+                display: flex;
+            }
+
+            .blink-hero {
+                padding: 120px 0 60px;
+            }
+
+            .blink-hero-title {
+                font-size: 32px;
+            }
+
+            .blink-hero-ctas {
+                flex-direction: column;
+            }
+
+            .blink-hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .blink-features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+        }
+
+        /* Mobile Menu */
+        .blink-mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 320px;
+            height: 100vh;
+            background: white;
+            z-index: 1001;
+            padding: 80px 24px 24px;
+            transition: right 0.3s ease;
+            box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .blink-mobile-menu.active {
+            right: 0;
+        }
+
+        .blink-mobile-menu-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .blink-mobile-menu ul {
+            list-style: none;
+        }
+
+        .blink-mobile-menu ul li {
+            margin-bottom: 16px;
+        }
+
+        .blink-mobile-menu ul li a {
+            display: block;
+            padding: 12px 0;
+            color: var(--blink-dark);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--blink-border);
+        }
+
+        .blink-mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blink-mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Counter Animation */
+        .blink-counter {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Skip Link (Accessibility) */
+        .blink-skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--blink-primary);
+            color: white;
+            padding: 10px 20px;
+            z-index: 10000;
+            transition: top 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 0 0 8px 0;
+        }
+
+        .blink-skip-link:focus {
+            top: 0;
+        }
+
+        /* Video Modal */
+        .blink-video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blink-video-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .blink-video-modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .blink-video-modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 900px;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .blink-video-modal.active .blink-video-modal-content {
+            transform: scale(1);
+        }
+
+        .blink-video-modal-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .blink-video-modal-close:hover {
+            transform: scale(1.2);
+        }
+
+        .blink-video-modal-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .blink-video-modal-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Video Play Button */
+        .blink-video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: var(--blink-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 10px 30px rgba(107, 70, 193, 0.4);
+        }
+
+        .blink-video-play-btn:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: var(--blink-primary-dark);
+        }
+
+        .blink-video-play-btn svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+            margin-left: 4px;
+        }
+
+        /* FAQ Section */
+        .blink-faq {
+            padding: 100px 0;
+            background: var(--blink-white);
+        }
+
+        .blink-faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blink-faq-item {
+            border: 1px solid var(--blink-border);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blink-faq-item:hover {
+            border-color: var(--blink-primary);
+        }
+
+        .blink-faq-item.active {
+            border-color: var(--blink-primary);
+            box-shadow: 0 4px 20px rgba(107, 70, 193, 0.1);
+        }
+
+        .blink-faq-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            background: white;
+            transition: background 0.3s ease;
+        }
+
+        .blink-faq-header:hover {
+            background: var(--blink-gray);
+        }
+
+        .blink-faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--blink-dark);
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        .blink-faq-toggle {
+            width: 32px;
+            height: 32px;
+            background: var(--blink-light-purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-toggle {
+            background: var(--blink-primary);
+            transform: rotate(180deg);
+        }
+
+        .blink-faq-toggle svg {
+            width: 16px;
+            height: 16px;
+            color: var(--blink-primary);
+            transition: color 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-toggle svg {
+            color: white;
+        }
+
+        .blink-faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-answer {
+            max-height: 500px;
+        }
+
+        .blink-faq-answer-content {
+            padding: 0 24px 24px;
+            font-size: 15px;
+            color: var(--blink-text);
+            line-height: 1.8;
+        }
+
+        /* ROI Calculator */
+        .blink-calculator {
+            padding: 100px 0;
+            background: var(--blink-light-purple);
+        }
+
+        .blink-calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .blink-calculator-form {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.15);
+        }
+
+        .blink-calculator-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 24px;
+        }
+
+        .blink-calc-group {
+            margin-bottom: 24px;
+        }
+
+        .blink-calc-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .blink-calc-label span {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--blink-dark);
+        }
+
+        .blink-calc-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--blink-primary);
+        }
+
+        .blink-calc-slider {
+            width: 100%;
+            -webkit-appearance: none;
+            height: 8px;
+            background: var(--blink-border);
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .blink-calc-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 24px;
+            height: 24px;
+            background: var(--blink-primary);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(107, 70, 193, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .blink-calc-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        .blink-calc-slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            background: var(--blink-primary);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 10px rgba(107, 70, 193, 0.3);
+        }
+
+        .blink-calculator-results {
+            background: var(--blink-dark);
+            border-radius: 20px;
+            padding: 40px;
+            color: white;
+        }
+
+        .blink-results-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .blink-result-item {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .blink-result-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .blink-result-item-label {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 8px;
+        }
+
+        .blink-result-item-value {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--blink-accent);
+        }
+
+        .blink-result-item-value.highlight {
+            color: #22C55E;
+        }
+
+        .blink-result-item-note {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 8px;
+        }
+
+        /* Parallax Effects */
+        .blink-parallax-bg {
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            top: -10%;
+            left: 0;
+            z-index: -1;
+            will-change: transform;
+        }
+
+        .blink-parallax-element {
+            will-change: transform;
+            transition: transform 0.1s ease-out;
+        }
+
+        .blink-floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Lazy Loading */
+        .blink-lazy {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .blink-lazy.loaded {
+            opacity: 1;
+        }
+
+        /* Additional Responsive Styles */
+        @media (max-width: 1024px) {
+            .blink-calculator-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blink-faq-question {
+                font-size: 15px;
+            }
+
+            .blink-calculator-form,
+            .blink-calculator-results {
+                padding: 24px;
+            }
+
+            .blink-result-item-value {
+                font-size: 32px;
+            }
+
+            .blink-video-play-btn {
+                width: 60px;
+                height: 60px;
+            }
+
+            .blink-video-play-btn svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to Main Content (Accessibility) -->
+    <a href="#main-content" class="blink-skip-link">Skip to main content</a>
+
+    <!-- Video Modal -->
+    <div class="blink-video-modal" id="videoModal">
+        <div class="blink-video-modal-overlay"></div>
+        <div class="blink-video-modal-content">
+            <button class="blink-video-modal-close" aria-label="Close video">&times;</button>
+            <div class="blink-video-modal-wrapper">
+                <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="blink-page">
+        <!-- Navigation -->
+        <nav class="blink-nav" id="blink-nav">
+            <div class="blink-container">
+                <div class="blink-nav-inner">
+                    <a href="itb-pos-home.html" class="blink-logo">
+                        <div class="blink-logo-icon">B</div>
+                        <span class="blink-logo-text">ITB POS</span>
+                    </a>
+
+                    <ul class="blink-nav-menu">
+                        <li><a href="itb-pos.html">POS</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="itb-pos.html">POS System</a></li>
+                                <li><a href="#">Online Ordering</a></li>
+                                <li><a href="#">Delivery Management</a></li>
+                                <li><a href="#">Inventory</a></li>
+                                <li><a href="#">Staff Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Customers</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Resources</a>
+                            <ul class="dropdown">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="#">Case Studies</a></li>
+                                <li><a href="faq.html">Help Center</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pos-for-bangladesh-restaurants.html">Bangladesh</a></li>
+                    </ul>
+
+                    <div class="blink-nav-actions">
+                        <a href="#contact" class="blink-btn blink-btn-secondary">Get a Demo</a>
+                        <a href="index.html" class="blink-btn blink-btn-primary">Back to ITB</a>
+                    </div>
+
+                    <button class="blink-menu-toggle" id="blink-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="blink-mobile-overlay" id="blink-mobile-overlay"></div>
+        <div class="blink-mobile-menu" id="blink-mobile-menu">
+            <button class="blink-mobile-menu-close" id="blink-mobile-close">&times;</button>
+            <ul>
+                <li><a href="itb-pos.html">POS</a></li>
+                <li><a href="#">Online Ordering</a></li>
+                <li><a href="#">Delivery Management</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="pos-for-bangladesh-restaurants.html">Bangladesh</a></li>
+                <li><a href="#contact">Get a Demo</a></li>
+                <li><a href="index.html">Back to ITB</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="blink-hero" id="hero">
+            <div class="blink-container">
+                <div class="blink-hero-inner">
+                    <div class="blink-hero-content">
+                        <div class="blink-hero-badge">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                            </svg>
+                            Quick to Respond, Quick to Fix
+                        </div>
+                        <h1 class="blink-heading blink-hero-title">
+                            Restaurant Management System for <span>POS, Online Ordering, Delivery</span> & More
+                        </h1>
+                        <p class="blink-hero-text">
+                            Streamline your restaurant operations with ITB POS's all-in-one platform. From point-of-sale to delivery management, inventory tracking to customer loyalty - everything you need to grow your restaurant business.
+                        </p>
+                        <div class="blink-hero-ctas">
+                            <a href="#contact" class="blink-btn blink-btn-primary blink-btn-large">
+                                Get Started Free
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="itb-pos.html" class="blink-btn blink-btn-secondary blink-btn-large">
+                                Explore POS
+                            </a>
+                        </div>
+                        <div class="blink-hero-stats">
+                            <div class="blink-hero-stat">
+                                <div class="blink-hero-stat-value blink-counter" data-target="5000">0</div>
+                                <div class="blink-hero-stat-label">Restaurants</div>
+                            </div>
+                            <div class="blink-hero-stat">
+                                <div class="blink-hero-stat-value"><span class="blink-counter" data-target="12">0</span>M+</div>
+                                <div class="blink-hero-stat-label">Orders Processed</div>
+                            </div>
+                            <div class="blink-hero-stat">
+                                <div class="blink-hero-stat-value"><span class="blink-counter" data-target="99">0</span>%</div>
+                                <div class="blink-hero-stat-label">Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blink-hero-image">
+                        <div class="blink-hero-devices" style="position: relative;">
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Restaurant POS System on tablet" class="blink-device-tablet blink-lazy" loading="lazy" />
+                            <button class="blink-video-play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Watch demo video">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="blink-partners">
+            <div class="blink-container">
+                <p class="blink-partners-label">Trusted Payment Integrations</p>
+                <div class="blink-partners-grid">
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#635BFF">
+                        <text x="10" y="28" font-size="20" font-weight="bold">Stripe</text>
+                    </svg>
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#00A1E0">
+                        <text x="10" y="28" font-size="18" font-weight="bold">bKash</text>
+                    </svg>
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#F5841F">
+                        <text x="10" y="28" font-size="18" font-weight="bold">Nagad</text>
+                    </svg>
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#8E2F89">
+                        <text x="10" y="28" font-size="18" font-weight="bold">Rocket</text>
+                    </svg>
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#0066FF">
+                        <text x="10" y="28" font-size="18" font-weight="bold">Razorpay</text>
+                    </svg>
+                    <svg class="blink-partner-logo" viewBox="0 0 100 40" fill="#1A1F71">
+                        <text x="10" y="28" font-size="18" font-weight="bold">Visa</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="blink-features" id="features">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">Our Solutions</span>
+                    <h2 class="blink-heading blink-section-title">Grow Faster, Manage Smarter with ITB POS</h2>
+                    <p class="blink-section-text">
+                        Everything you need to run a successful restaurant business, all in one powerful platform.
+                    </p>
+                </div>
+
+                <div class="blink-features-grid">
+                    <!-- Feature 1: POS -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">Restaurant POS System</h3>
+                        <p class="blink-feature-text">
+                            Streamline all credit card and cash transactions with our intuitive point-of-sale system. Table management, split bills, and real-time reporting.
+                        </p>
+                        <a href="itb-pos.html" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 2: Online Ordering -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">Online Ordering System</h3>
+                        <p class="blink-feature-text">
+                            Own your revenue channel with commission-free online ordering. Custom branded website, mobile app, and seamless kitchen integration.
+                        </p>
+                        <a href="#" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 3: Delivery -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">Restaurant Delivery Software</h3>
+                        <p class="blink-feature-text">
+                            Manage in-house and third-party deliveries from one dashboard. Real-time tracking, driver management, and route optimization.
+                        </p>
+                        <a href="#" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 4: Inventory -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">Restaurant Inventory</h3>
+                        <p class="blink-feature-text">
+                            Track food costs in real-time with smart insights. Automatic low-stock alerts, recipe costing, and waste management.
+                        </p>
+                        <a href="#" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 5: Staff Management -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">Staff & Employee Management</h3>
+                        <p class="blink-feature-text">
+                            Payroll, schedules, tips, and timesheets all in one place. Role-based access, performance tracking, and shift swapping.
+                        </p>
+                        <a href="#" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Feature 6: CRM & Loyalty -->
+                    <div class="blink-feature-card">
+                        <div class="blink-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="blink-feature-title">CRM & Loyalty Program</h3>
+                        <p class="blink-feature-text">
+                            Build lasting customer relationships with personalized rewards, automated marketing campaigns, and customer insights.
+                        </p>
+                        <a href="#" class="blink-feature-link">
+                            Learn More
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="blink-testimonials" id="testimonials">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">Customer Stories</span>
+                    <h2 class="blink-heading blink-section-title">Trusted by Restaurants Worldwide</h2>
+                    <p class="blink-section-text">
+                        See what restaurant owners are saying about ITB POS's impact on their business.
+                    </p>
+                </div>
+
+                <div class="blink-testimonials-slider">
+                    <div class="swiper blink-testimonials-swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Testimonial 1 -->
+                            <div class="swiper-slide">
+                                <div class="blink-testimonial-card">
+                                    <div class="blink-testimonial-rating">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                    <p class="blink-testimonial-quote">
+                                        "ITB POS has transformed how we run our restaurant. The POS system is incredibly intuitive, and the integrated online ordering has increased our revenue by 35%. The support team is always there when we need them."
+                                    </p>
+                                    <div class="blink-testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Ahmed Hassan" class="blink-testimonial-avatar">
+                                        <div>
+                                            <div class="blink-testimonial-name">Ahmed Hassan</div>
+                                            <div class="blink-testimonial-role">Owner, Spice Garden Restaurant</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="swiper-slide">
+                                <div class="blink-testimonial-card">
+                                    <div class="blink-testimonial-rating">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                    <p class="blink-testimonial-quote">
+                                        "The inventory management alone has saved us thousands of dollars in food waste. We now have real-time visibility into our costs and can make data-driven decisions. Highly recommend ITB POS to any restaurant owner."
+                                    </p>
+                                    <div class="blink-testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Chen" class="blink-testimonial-avatar">
+                                        <div>
+                                            <div class="blink-testimonial-name">Sarah Chen</div>
+                                            <div class="blink-testimonial-role">Manager, Dragon Palace</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="swiper-slide">
+                                <div class="blink-testimonial-card">
+                                    <div class="blink-testimonial-rating">
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    </div>
+                                    <p class="blink-testimonial-quote">
+                                        "We switched from a legacy POS to ITB POS and never looked back. The delivery integration with third-party apps is seamless. Our kitchen efficiency has improved by 40% since we started using ITB POS."
+                                    </p>
+                                    <div class="blink-testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Michael Rodriguez" class="blink-testimonial-avatar">
+                                        <div>
+                                            <div class="blink-testimonial-name">Michael Rodriguez</div>
+                                            <div class="blink-testimonial-role">Founder, Taco Fiesta Chain</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-testimonials-nav">
+                        <button class="blink-testimonial-prev" aria-label="Previous testimonial">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 12H5M12 19l-7-7 7-7"/>
+                            </svg>
+                        </button>
+                        <button class="blink-testimonial-next" aria-label="Next testimonial">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="blink-results" id="results">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label" style="color: var(--blink-accent);">Real Results</span>
+                    <h2 class="blink-heading blink-section-title">Real Customers, Proven Results</h2>
+                    <p class="blink-section-text">
+                        Our customers achieve measurable improvements in their restaurant operations.
+                    </p>
+                </div>
+
+                <div class="blink-results-grid">
+                    <div class="blink-result-card">
+                        <div class="blink-result-icon">⚡</div>
+                        <div class="blink-result-value">2X</div>
+                        <div class="blink-result-label">Faster Table Service</div>
+                    </div>
+
+                    <div class="blink-result-card">
+                        <div class="blink-result-icon">🚀</div>
+                        <div class="blink-result-value">30s</div>
+                        <div class="blink-result-label">Average Order Speed</div>
+                    </div>
+
+                    <div class="blink-result-card">
+                        <div class="blink-result-icon">📈</div>
+                        <div class="blink-result-value">51%</div>
+                        <div class="blink-result-label">Increased Order Value</div>
+                    </div>
+
+                    <div class="blink-result-card">
+                        <div class="blink-result-icon">⭐</div>
+                        <div class="blink-result-value">4.95</div>
+                        <div class="blink-result-label">Average Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Calculator Section -->
+        <section class="blink-calculator" id="calculator">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">ROI Calculator</span>
+                    <h2 class="blink-heading blink-section-title">See How Much You Could Save</h2>
+                    <p class="blink-section-text">
+                        Calculate your potential savings and revenue increase with ITB POS.
+                    </p>
+                </div>
+
+                <div class="blink-calculator-grid">
+                    <div class="blink-calculator-form">
+                        <h3 class="blink-calculator-title">Enter Your Numbers</h3>
+
+                        <div class="blink-calc-group">
+                            <div class="blink-calc-label">
+                                <span>Daily Orders</span>
+                                <span class="blink-calc-value" id="ordersValue">100</span>
+                            </div>
+                            <input type="range" class="blink-calc-slider" id="ordersSlider" min="20" max="500" value="100">
+                        </div>
+
+                        <div class="blink-calc-group">
+                            <div class="blink-calc-label">
+                                <span>Average Order Value ($)</span>
+                                <span class="blink-calc-value" id="avgOrderValue">$25</span>
+                            </div>
+                            <input type="range" class="blink-calc-slider" id="avgOrderSlider" min="10" max="100" value="25">
+                        </div>
+
+                        <div class="blink-calc-group">
+                            <div class="blink-calc-label">
+                                <span>Staff Count</span>
+                                <span class="blink-calc-value" id="staffValue">10</span>
+                            </div>
+                            <input type="range" class="blink-calc-slider" id="staffSlider" min="2" max="50" value="10">
+                        </div>
+
+                        <div class="blink-calc-group">
+                            <div class="blink-calc-label">
+                                <span>Current Order Errors (%)</span>
+                                <span class="blink-calc-value" id="errorsValue">5%</span>
+                            </div>
+                            <input type="range" class="blink-calc-slider" id="errorsSlider" min="1" max="15" value="5">
+                        </div>
+                    </div>
+
+                    <div class="blink-calculator-results">
+                        <h4 class="blink-results-title">Your Potential Savings</h4>
+
+                        <div class="blink-result-item">
+                            <div class="blink-result-item-label">Monthly Revenue Increase</div>
+                            <div class="blink-result-item-value highlight" id="revenueIncrease">$3,750</div>
+                            <div class="blink-result-item-note">Based on 15% upselling improvement</div>
+                        </div>
+
+                        <div class="blink-result-item">
+                            <div class="blink-result-item-label">Saved from Reduced Errors</div>
+                            <div class="blink-result-item-value" id="errorSavings">$937</div>
+                            <div class="blink-result-item-note">75% reduction in order errors</div>
+                        </div>
+
+                        <div class="blink-result-item">
+                            <div class="blink-result-item-label">Labor Cost Savings</div>
+                            <div class="blink-result-item-value" id="laborSavings">$1,200</div>
+                            <div class="blink-result-item-note">30% faster order processing</div>
+                        </div>
+
+                        <div class="blink-result-item">
+                            <div class="blink-result-item-label">Total Annual Impact</div>
+                            <div class="blink-result-item-value highlight" id="totalSavings">$70,644</div>
+                            <div class="blink-result-item-note">Combined savings and revenue increase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="blink-faq" id="faq">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">FAQ</span>
+                    <h2 class="blink-heading blink-section-title">Frequently Asked Questions</h2>
+                    <p class="blink-section-text">
+                        Everything you need to know about ITB POS.
+                    </p>
+                </div>
+
+                <div class="blink-faq-list">
+                    <div class="blink-faq-item active">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">What is ITB POS?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                ITB POS is an all-in-one restaurant management system that includes point-of-sale, online ordering, delivery management, inventory tracking, staff management, and CRM features. It's designed to help restaurants of all sizes streamline operations, reduce costs, and increase revenue. Whether you run a single food truck or a chain of restaurants, ITB POS scales with your business.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">How much does ITB POS cost?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                ITB POS offers flexible pricing plans starting with a free trial. Our Starter plan begins at $29/month for single locations. Professional plans with advanced features like inventory management and delivery integration are $79/month. Enterprise plans with multi-location management and custom integrations are available at custom pricing. All plans include 24/7 support and free updates.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">Does ITB POS work offline?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Yes! ITB POS has a robust offline mode. You can continue taking orders, processing cash payments, and managing your restaurant even without internet connection. All your data is stored locally and automatically syncs to the cloud when your connection returns. This ensures you never miss a sale due to internet outages.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">What payment methods does ITB POS support?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                ITB POS supports all major payment methods including credit and debit cards through integrations with Stripe, Square, and other processors. In Bangladesh, we offer native integration with bKash, Nagad, and Rocket. We also support cash payments, split bills, gift cards, and loyalty points redemption. Contact us for custom payment integration needs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">Can I integrate ITB POS with delivery apps?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Absolutely! ITB POS integrates with major delivery platforms including DoorDash, Uber Eats, Grubhub, and regional services like Foodpanda and Pathao in South Asia. Orders from these platforms flow directly into your kitchen without manual entry. You can also manage your own delivery fleet with our built-in driver management and real-time tracking features.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header">
+                            <h3 class="blink-faq-question">How long does setup take?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Most restaurants are up and running within 24-48 hours. Our onboarding team helps you import your menu, set up payment processing, train your staff, and configure all features. For larger chains, we offer dedicated implementation support. We also provide pre-built menu templates for quick setup and free data migration from your existing POS system.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="blink-contact" id="contact">
+            <div class="blink-container">
+                <div class="blink-contact-grid">
+                    <div class="blink-contact-content">
+                        <h2 class="blink-heading">Let's Connect</h2>
+                        <p>
+                            Ready to transform your restaurant operations? Get in touch with our team for a personalized demo and see how ITB POS can help your business grow.
+                        </p>
+                        <ul class="blink-contact-info">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                +92 310 5719411
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                blink@innovatechbiz.com
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Islamabad, Pakistan
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="blink-contact-form" id="blink-contact-form">
+                        <div class="blink-form-row">
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" class="blink-form-input" required>
+                            </div>
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" class="blink-form-input" required>
+                            </div>
+                        </div>
+                        <div class="blink-form-row">
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="blink-form-input">
+                            </div>
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="restaurant">Restaurant Name *</label>
+                                <input type="text" id="restaurant" name="restaurant" class="blink-form-input" required>
+                            </div>
+                        </div>
+                        <div class="blink-form-row">
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="locations">Number of Locations</label>
+                                <select id="locations" name="locations" class="blink-form-input">
+                                    <option value="1">1 Location</option>
+                                    <option value="2-5">2-5 Locations</option>
+                                    <option value="6-10">6-10 Locations</option>
+                                    <option value="10+">10+ Locations</option>
+                                </select>
+                            </div>
+                            <div class="blink-form-group">
+                                <label class="blink-form-label" for="city">City/Region</label>
+                                <input type="text" id="city" name="city" class="blink-form-input">
+                            </div>
+                        </div>
+                        <div class="blink-form-group full-width">
+                            <label class="blink-form-label" for="message">Message</label>
+                            <textarea id="message" name="message" class="blink-form-input blink-form-textarea" placeholder="Tell us about your restaurant and what you're looking for..."></textarea>
+                        </div>
+                        <button type="submit" class="blink-btn blink-btn-primary blink-form-submit">
+                            Get in Touch
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="blink-footer">
+            <div class="blink-container">
+                <div class="blink-footer-grid">
+                    <div class="blink-footer-brand">
+                        <a href="itb-pos-home.html" class="blink-logo">
+                            <div class="blink-logo-icon">B</div>
+                            <span class="blink-logo-text" style="color: white;">ITB POS</span>
+                        </a>
+                        <p>
+                            ITB POS is the all-in-one restaurant management platform that helps you streamline operations, increase revenue, and delight customers.
+                        </p>
+                        <div class="blink-footer-social">
+                            <a href="#" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Products</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="itb-pos.html">POS System</a></li>
+                            <li><a href="#">Online Ordering</a></li>
+                            <li><a href="#">Delivery Management</a></li>
+                            <li><a href="#">Inventory</a></li>
+                            <li><a href="#">Staff Management</a></li>
+                            <li><a href="#">CRM & Loyalty</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Company</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Resources</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="faq.html">Help Center</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">System Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Regions</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="pos-for-bangladesh-restaurants.html">Bangladesh</a></li>
+                            <li><a href="#">Pakistan</a></li>
+                            <li><a href="#">UAE</a></li>
+                            <li><a href="#">Saudi Arabia</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blink-footer-bottom">
+                    <p class="blink-footer-copyright">
+                        &copy; 2025 ITB POS by InnovaTechBiz. All rights reserved.
+                    </p>
+                    <div class="blink-footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/plugins/swiper.min.js"></script>
+
+    <!-- ITB POS Specific Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sticky Navigation
+            const nav = document.getElementById('blink-nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('blink-menu-toggle');
+            const mobileMenu = document.getElementById('blink-mobile-menu');
+            const mobileOverlay = document.getElementById('blink-mobile-overlay');
+            const mobileClose = document.getElementById('blink-mobile-close');
+
+            function openMobileMenu() {
+                mobileMenu.classList.add('active');
+                mobileOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            menuToggle.addEventListener('click', openMobileMenu);
+            mobileClose.addEventListener('click', closeMobileMenu);
+            mobileOverlay.addEventListener('click', closeMobileMenu);
+
+            // Smooth Scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            closeMobileMenu();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Counter Animation
+            const counters = document.querySelectorAll('.blink-counter');
+            const observerOptions = {
+                threshold: 0.5
+            };
+
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+
+                        const updateCounter = () => {
+                            current += step;
+                            if (current < target) {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target;
+                            }
+                        };
+
+                        updateCounter();
+                        counterObserver.unobserve(counter);
+                    }
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+
+            // Testimonials Swiper
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('.blink-testimonials-swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true
+                    },
+                    navigation: {
+                        nextEl: '.blink-testimonial-next',
+                        prevEl: '.blink-testimonial-prev'
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2
+                        },
+                        1024: {
+                            slidesPerView: 3
+                        }
+                    }
+                });
+            }
+
+            // Form Validation
+            const contactForm = document.getElementById('blink-contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Basic validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const restaurant = document.getElementById('restaurant').value.trim();
+
+                    if (!name || !email || !restaurant) {
+                        alert('Please fill in all required fields.');
+                        return;
+                    }
+
+                    // Email validation
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Please enter a valid email address.');
+                        return;
+                    }
+
+                    // Success state
+                    alert('Thank you for your interest! We will contact you shortly.');
+                    contactForm.reset();
+                });
+            }
+
+            // Scroll Animation for Feature Cards
+            const featureCards = document.querySelectorAll('.blink-feature-card');
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                        cardObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            featureCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                cardObserver.observe(card);
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.blink-faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.blink-faq-header');
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all items
+                    faqItems.forEach(i => i.classList.remove('active'));
+
+                    // Open clicked item if it wasn't active
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+
+            // Video Modal
+            const videoModal = document.getElementById('videoModal');
+            const videoIframe = document.getElementById('videoIframe');
+            const videoPlayBtns = document.querySelectorAll('.blink-video-play-btn');
+            const videoModalOverlay = videoModal?.querySelector('.blink-video-modal-overlay');
+            const videoModalClose = videoModal?.querySelector('.blink-video-modal-close');
+
+            function openVideoModal(videoUrl) {
+                if (videoModal && videoIframe) {
+                    videoIframe.src = videoUrl + '?autoplay=1';
+                    videoModal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeVideoModal() {
+                if (videoModal && videoIframe) {
+                    videoModal.classList.remove('active');
+                    videoIframe.src = '';
+                    document.body.style.overflow = '';
+                }
+            }
+
+            videoPlayBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const videoUrl = btn.getAttribute('data-video');
+                    if (videoUrl) {
+                        openVideoModal(videoUrl);
+                    }
+                });
+            });
+
+            if (videoModalOverlay) {
+                videoModalOverlay.addEventListener('click', closeVideoModal);
+            }
+
+            if (videoModalClose) {
+                videoModalClose.addEventListener('click', closeVideoModal);
+            }
+
+            // Close modal on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeVideoModal();
+                    closeMobileMenu();
+                }
+            });
+
+            // ROI Calculator
+            const ordersSlider = document.getElementById('ordersSlider');
+            const avgOrderSlider = document.getElementById('avgOrderSlider');
+            const staffSlider = document.getElementById('staffSlider');
+            const errorsSlider = document.getElementById('errorsSlider');
+
+            function updateCalculator() {
+                const orders = parseInt(ordersSlider?.value || 100);
+                const avgOrder = parseInt(avgOrderSlider?.value || 25);
+                const staff = parseInt(staffSlider?.value || 10);
+                const errors = parseInt(errorsSlider?.value || 5);
+
+                // Update displayed values
+                const ordersValue = document.getElementById('ordersValue');
+                const avgOrderValue = document.getElementById('avgOrderValue');
+                const staffValue = document.getElementById('staffValue');
+                const errorsValue = document.getElementById('errorsValue');
+
+                if (ordersValue) ordersValue.textContent = orders;
+                if (avgOrderValue) avgOrderValue.textContent = '$' + avgOrder;
+                if (staffValue) staffValue.textContent = staff;
+                if (errorsValue) errorsValue.textContent = errors + '%';
+
+                // Calculate results
+                const monthlyRevenue = orders * avgOrder * 30;
+                const revenueIncrease = monthlyRevenue * 0.15; // 15% upselling improvement
+                const errorSavings = (monthlyRevenue * (errors / 100)) * 0.75; // 75% error reduction
+                const laborSavings = staff * 40 * 30; // $40/staff/month efficiency
+
+                // Update results
+                const revenueIncreaseEl = document.getElementById('revenueIncrease');
+                const errorSavingsEl = document.getElementById('errorSavings');
+                const laborSavingsEl = document.getElementById('laborSavings');
+                const totalSavingsEl = document.getElementById('totalSavings');
+
+                const formatCurrency = (num) => {
+                    return '$' + Math.round(num).toLocaleString();
+                };
+
+                if (revenueIncreaseEl) revenueIncreaseEl.textContent = formatCurrency(revenueIncrease);
+                if (errorSavingsEl) errorSavingsEl.textContent = formatCurrency(errorSavings);
+                if (laborSavingsEl) laborSavingsEl.textContent = formatCurrency(laborSavings);
+                if (totalSavingsEl) {
+                    const annual = (revenueIncrease + errorSavings + laborSavings) * 12;
+                    totalSavingsEl.textContent = formatCurrency(annual);
+                }
+            }
+
+            if (ordersSlider) ordersSlider.addEventListener('input', updateCalculator);
+            if (avgOrderSlider) avgOrderSlider.addEventListener('input', updateCalculator);
+            if (staffSlider) staffSlider.addEventListener('input', updateCalculator);
+            if (errorsSlider) errorsSlider.addEventListener('input', updateCalculator);
+
+            // Initialize calculator
+            updateCalculator();
+
+            // Parallax Effects
+            let ticking = false;
+            const parallaxElements = document.querySelectorAll('.blink-parallax-element');
+            const heroImage = document.querySelector('.blink-hero-devices');
+
+            function updateParallax() {
+                const scrolled = window.scrollY;
+
+                if (heroImage && scrolled < window.innerHeight) {
+                    heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
+                }
+
+                parallaxElements.forEach(el => {
+                    const speed = el.getAttribute('data-speed') || 0.5;
+                    el.style.transform = `translateY(${scrolled * speed}px)`;
+                });
+
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            });
+
+            // Lazy Loading Images
+            const lazyImages = document.querySelectorAll('.blink-lazy');
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.classList.add('loaded');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '50px' });
+
+            lazyImages.forEach(img => imageObserver.observe(img));
+
+            // Scroll Progress Indicator (optional enhancement)
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 3px;
+                background: var(--blink-gradient);
+                z-index: 9999;
+                transition: width 0.1s ease;
+            `;
+            document.body.appendChild(progressBar);
+
+            function updateScrollProgress() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = (scrollTop / docHeight) * 100;
+                progressBar.style.width = progress + '%';
+            }
+
+            window.addEventListener('scroll', updateScrollProgress);
+
+            // CTA Click Tracking (for analytics)
+            document.querySelectorAll('.blink-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const btnText = btn.textContent.trim();
+                    console.log('[Analytics] CTA Click:', btnText);
+                    // In production, send to analytics service
+                });
+            });
+
+            // Scroll Depth Tracking
+            const scrollDepths = [25, 50, 75, 100];
+            const trackedDepths = new Set();
+
+            function trackScrollDepth() {
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+                scrollDepths.forEach(depth => {
+                    if (scrollPercent >= depth && !trackedDepths.has(depth)) {
+                        trackedDepths.add(depth);
+                        console.log('[Analytics] Scroll Depth:', depth + '%');
+                        // In production, send to analytics service
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', debounce(trackScrollDepth, 100));
+
+            // Debounce helper
+            function debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+        });
+    </script>
+</body>
+
+</html>

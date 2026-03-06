@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="InnovaTechBiz" />
+
+    <!-- SEO Meta Tags -->
+    <title>Bangladesh Restaurant POS | bKash, Nagad, Rocket Integration | ITB POS</title>
+    <meta name="description" content="ITB POS for Bangladesh restaurants. Native bKash, Nagad, and Rocket payment integration. BDT support, Bengali language, local tax compliance. The #1 restaurant POS in Bangladesh." />
+    <meta name="keywords" content="Bangladesh restaurant POS, bKash POS integration, Nagad payment restaurant, Rocket payment POS, Dhaka restaurant software, BDT POS system, রেস্তোরাঁ পস, বাংলাদেশ রেস্টুরেন্ট সফটওয়্যার, food delivery Bangladesh, restaurant management Dhaka" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://innovatechbiz.com/pos-for-bangladesh-restaurants.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bangladesh Restaurant POS | bKash, Nagad, Rocket | ITB POS" />
+    <meta property="og:description" content="The #1 restaurant POS system for Bangladesh. Native mobile payment integration, BDT support, and local compliance built-in." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://innovatechbiz.com/pos-for-bangladesh-restaurants.html" />
+    <meta property="og:image" content="assets/img/blink/bangladesh-pos-og.jpg" />
+    <meta property="og:site_name" content="ITB POS by InnovaTechBiz" />
+    <meta property="og:locale" content="en_BD" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bangladesh Restaurant POS | ITB POS" />
+    <meta name="twitter:description" content="Native bKash, Nagad, Rocket integration. Built for Bangladesh restaurants." />
+
+    <!-- Favicon Icon -->
+    <link rel="icon" href="assets/img/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ITB POS for Bangladesh",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web, iOS, Android",
+        "description": "Restaurant POS system for Bangladesh with bKash, Nagad, and Rocket payment integration. Bengali language support, BDT currency, and VAT compliance.",
+        "offers": {
+            "@type": "Offer",
+            "price": "2999",
+            "priceCurrency": "BDT",
+            "priceValidUntil": "2026-12-31"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "500"
+        },
+        "availableCountry": {
+            "@type": "Country",
+            "name": "Bangladesh"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Does ITB POS support bKash payments?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, ITB POS has native bKash merchant integration. Accept payments via QR code or phone number with instant confirmation and automatic settlement."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is there Bengali language support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, ITB POS offers full Bengali (বাংলা) language support for menus, receipts, and the entire interface."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does VAT compliance work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ITB POS automatically calculates VAT according to NBR guidelines and generates compliant invoices for tax reporting."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Bangladesh Page Specific Styles -->
+    <style>
+        :root {
+            --blink-primary: #6B46C1;
+            --blink-primary-dark: #553C9A;
+            --blink-primary-light: #7C3AED;
+            --blink-secondary: #EC4899;
+            --blink-accent: #8B5CF6;
+            --blink-dark: #1F2937;
+            --blink-gray: #F3F4F6;
+            --blink-light-purple: #EDE9FE;
+            --blink-text: #4B5563;
+            --blink-text-light: #6B7280;
+            --blink-white: #FFFFFF;
+            --blink-border: #E5E7EB;
+            --blink-gradient: linear-gradient(135deg, #6B46C1 0%, #7C3AED 50%, #8B5CF6 100%);
+            --blink-green: #006A4E;
+            --blink-red: #F42A41;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--blink-white);
+            color: var(--blink-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .blink-page {
+            position: relative;
+            z-index: 1;
+        }
+
+        .blink-heading {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .blink-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation */
+        .blink-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--blink-border);
+            transition: all 0.3s ease;
+        }
+
+        .blink-nav.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blink-nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+
+        .blink-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .blink-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--blink-gradient);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .blink-logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blink-dark);
+        }
+
+        .blink-nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .blink-nav-menu a {
+            color: var(--blink-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .blink-nav-menu a:hover {
+            color: var(--blink-primary);
+        }
+
+        .blink-nav-menu .has-dropdown {
+            position: relative;
+        }
+
+        .blink-nav-menu .has-dropdown > a::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid currentColor;
+            margin-left: 6px;
+            display: inline-block;
+        }
+
+        .blink-nav-menu .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            padding: 12px 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .blink-nav-menu .has-dropdown:hover .dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .blink-nav-menu .dropdown a {
+            display: block;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .blink-nav-menu .dropdown a:hover {
+            background: var(--blink-light-purple);
+        }
+
+        .blink-nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .blink-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .blink-btn-primary {
+            background: var(--blink-gradient);
+            color: white;
+        }
+
+        .blink-btn-primary:hover {
+            background: var(--blink-gradient-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(107, 70, 193, 0.35);
+            color: white;
+        }
+
+        .blink-btn-secondary {
+            background: transparent;
+            color: var(--blink-primary);
+            border: 2px solid var(--blink-primary);
+        }
+
+        .blink-btn-secondary:hover {
+            background: var(--blink-primary);
+            color: white;
+        }
+
+        .blink-btn-large {
+            padding: 16px 32px;
+            font-size: 16px;
+        }
+
+        .blink-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .blink-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--blink-dark);
+            transition: all 0.3s ease;
+        }
+
+        /* Language Switcher */
+        .blink-lang-switch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: var(--blink-gray);
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .blink-lang-switch button {
+            background: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blink-text-light);
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .blink-lang-switch button.active {
+            background: var(--blink-primary);
+            color: white;
+        }
+
+        /* Hero Section - Bangladesh Flag Colors Accent */
+        .bd-hero {
+            padding: 160px 0 100px;
+            background: linear-gradient(180deg, #f0fff4 0%, var(--blink-white) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bd-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--blink-green) 50%, var(--blink-red) 50%);
+        }
+
+        .bd-hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .bd-hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .bd-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--blink-green);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .bd-hero-badge-flag {
+            width: 24px;
+            height: 16px;
+            background: var(--blink-green);
+            border-radius: 2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .bd-hero-badge-flag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: var(--blink-red);
+            border-radius: 50%;
+        }
+
+        .bd-hero-title {
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 800;
+            color: var(--blink-dark);
+            margin-bottom: 20px;
+            line-height: 1.15;
+        }
+
+        .bd-hero-title span {
+            color: var(--blink-green);
+        }
+
+        .bd-hero-text {
+            font-size: 18px;
+            color: var(--blink-text);
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        .bd-hero-ctas {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .bd-hero-payments {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bd-hero-payments-label {
+            font-size: 14px;
+            color: var(--blink-text-light);
+        }
+
+        .bd-hero-payments-logos {
+            display: flex;
+            gap: 16px;
+        }
+
+        .bd-payment-logo {
+            height: 36px;
+            padding: 6px 12px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bd-payment-logo svg {
+            height: 24px;
+            width: auto;
+        }
+
+        .bd-hero-image {
+            position: relative;
+        }
+
+        .bd-hero-image img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 106, 78, 0.2);
+        }
+
+        /* Popular Badge */
+        .bd-popular-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: var(--blink-red);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Section Styles */
+        .blink-section {
+            padding: 100px 0;
+        }
+
+        .blink-section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .blink-section-label {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--blink-primary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
+        .blink-section-title {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 16px;
+            line-height: 1.25;
+        }
+
+        .blink-section-text {
+            font-size: 17px;
+            color: var(--blink-text);
+            line-height: 1.7;
+        }
+
+        /* Payment Integration Section */
+        .bd-payments {
+            background: var(--blink-gray);
+        }
+
+        .bd-payments-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .bd-payment-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px 32px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .bd-payment-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--blink-primary);
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.15);
+        }
+
+        .bd-payment-card-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 24px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        .bd-payment-card-logo.bkash {
+            background: #E2136E;
+            color: white;
+        }
+
+        .bd-payment-card-logo.nagad {
+            background: #F5841F;
+            color: white;
+        }
+
+        .bd-payment-card-logo.rocket {
+            background: #8E2F89;
+            color: white;
+        }
+
+        .bd-payment-card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 12px;
+        }
+
+        .bd-payment-card-text {
+            font-size: 15px;
+            color: var(--blink-text);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .bd-payment-card-features {
+            list-style: none;
+            text-align: left;
+        }
+
+        .bd-payment-card-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: var(--blink-dark);
+        }
+
+        .bd-payment-card-features li svg {
+            width: 18px;
+            height: 18px;
+            color: var(--blink-green);
+        }
+
+        /* Local Features Section */
+        .bd-features {
+            background: white;
+        }
+
+        .bd-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .bd-feature-item {
+            display: flex;
+            gap: 24px;
+            padding: 32px;
+            background: var(--blink-gray);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .bd-feature-item:hover {
+            background: var(--blink-light-purple);
+        }
+
+        .bd-feature-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--blink-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .bd-feature-icon svg {
+            width: 28px;
+            height: 28px;
+            color: white;
+        }
+
+        .bd-feature-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--blink-dark);
+            margin-bottom: 8px;
+        }
+
+        .bd-feature-content p {
+            font-size: 15px;
+            color: var(--blink-text);
+            line-height: 1.7;
+        }
+
+        /* Success Stories */
+        .bd-stories {
+            background: var(--blink-dark);
+            color: white;
+        }
+
+        .bd-stories .blink-section-title {
+            color: white;
+        }
+
+        .bd-stories .blink-section-text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .bd-stories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .bd-story-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 32px;
+            transition: all 0.3s ease;
+        }
+
+        .bd-story-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .bd-story-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--blink-accent);
+            margin-bottom: 16px;
+        }
+
+        .bd-story-quote {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+
+        .bd-story-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .bd-story-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .bd-story-name {
+            font-weight: 600;
+            color: white;
+            font-size: 15px;
+        }
+
+        .bd-story-business {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Stats Section */
+        .bd-stats {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--blink-green) 0%, #004D40 100%);
+        }
+
+        .bd-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .bd-stat-card {
+            text-align: center;
+            color: white;
+        }
+
+        .bd-stat-value {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .bd-stat-label {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        /* Pricing Section */
+        .bd-pricing {
+            background: var(--blink-gray);
+        }
+
+        .bd-pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .bd-pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .bd-pricing-card.featured {
+            border-color: var(--blink-primary);
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.2);
+        }
+
+        .bd-pricing-badge {
+            background: var(--blink-primary);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .bd-pricing-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--blink-dark);
+            margin-bottom: 8px;
+        }
+
+        .bd-pricing-desc {
+            font-size: 14px;
+            color: var(--blink-text-light);
+            margin-bottom: 24px;
+        }
+
+        .bd-pricing-price {
+            margin-bottom: 24px;
+        }
+
+        .bd-pricing-amount {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--blink-primary);
+        }
+
+        .bd-pricing-currency {
+            font-size: 18px;
+            color: var(--blink-text-light);
+        }
+
+        .bd-pricing-period {
+            font-size: 14px;
+            color: var(--blink-text-light);
+        }
+
+        .bd-pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .bd-pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 0;
+            font-size: 14px;
+            color: var(--blink-dark);
+            border-bottom: 1px solid var(--blink-border);
+        }
+
+        .bd-pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        .bd-pricing-features li svg {
+            width: 18px;
+            height: 18px;
+            color: var(--blink-green);
+        }
+
+        .bd-pricing-btn {
+            width: 100%;
+        }
+
+        /* CTA Section */
+        .bd-cta {
+            padding: 100px 0;
+            background: var(--blink-gradient);
+            text-align: center;
+        }
+
+        .bd-cta-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        .bd-cta-text {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bd-cta .blink-btn {
+            background: white;
+            color: var(--blink-primary);
+        }
+
+        .bd-cta .blink-btn:hover {
+            background: var(--blink-light-purple);
+        }
+
+        .bd-cta-contact {
+            margin-top: 24px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+        }
+
+        .bd-cta-contact a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .blink-footer {
+            background: var(--blink-dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        .blink-footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .blink-footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 20px 0;
+        }
+
+        .blink-footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .blink-footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .blink-footer-social a:hover {
+            background: var(--blink-primary);
+            transform: translateY(-3px);
+        }
+
+        .blink-footer-col h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: white;
+        }
+
+        .blink-footer-links {
+            list-style: none;
+        }
+
+        .blink-footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .blink-footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .blink-footer-links a:hover {
+            color: white;
+        }
+
+        .blink-footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blink-footer-copyright {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .blink-footer-legal {
+            display: flex;
+            gap: 24px;
+        }
+
+        .blink-footer-legal a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .blink-footer-legal a:hover {
+            color: white;
+        }
+
+        /* Mobile Menu */
+        .blink-mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            max-width: 320px;
+            height: 100vh;
+            background: white;
+            z-index: 1001;
+            padding: 80px 24px 24px;
+            transition: right 0.3s ease;
+            box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .blink-mobile-menu.active {
+            right: 0;
+        }
+
+        .blink-mobile-menu-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .blink-mobile-menu ul {
+            list-style: none;
+        }
+
+        .blink-mobile-menu ul li {
+            margin-bottom: 16px;
+        }
+
+        .blink-mobile-menu ul li a {
+            display: block;
+            padding: 12px 0;
+            color: var(--blink-dark);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-bottom: 1px solid var(--blink-border);
+        }
+
+        .blink-mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blink-mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .bd-hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .bd-hero-content {
+                order: 1;
+            }
+
+            .bd-hero-image {
+                order: 2;
+            }
+
+            .bd-hero-ctas {
+                justify-content: center;
+            }
+
+            .bd-hero-payments {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .bd-hero-text {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .bd-payments-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bd-features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bd-stories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bd-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .bd-pricing-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .bd-pricing-card.featured {
+                transform: none;
+            }
+
+            .blink-footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blink-nav-menu {
+                display: none;
+            }
+
+            .blink-menu-toggle {
+                display: flex;
+            }
+
+            .bd-hero {
+                padding: 120px 0 60px;
+            }
+
+            .bd-hero-title {
+                font-size: 32px;
+            }
+
+            .bd-hero-ctas {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bd-stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .blink-footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .bd-cta-title {
+                font-size: 28px;
+            }
+        }
+
+        /* Skip Link (Accessibility) */
+        .blink-skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--blink-primary);
+            color: white;
+            padding: 10px 20px;
+            z-index: 10000;
+            transition: top 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 0 0 8px 0;
+        }
+
+        .blink-skip-link:focus {
+            top: 0;
+        }
+
+        /* Video Modal */
+        .blink-video-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .blink-video-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .blink-video-modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+        }
+
+        .blink-video-modal-content {
+            position: relative;
+            width: 90%;
+            max-width: 900px;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .blink-video-modal.active .blink-video-modal-content {
+            transform: scale(1);
+        }
+
+        .blink-video-modal-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .blink-video-modal-close:hover {
+            transform: scale(1.2);
+        }
+
+        .blink-video-modal-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .blink-video-modal-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Video Play Button */
+        .blink-video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: var(--blink-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0, 106, 78, 0.4);
+        }
+
+        .blink-video-play-btn:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: #004D40;
+        }
+
+        .blink-video-play-btn svg {
+            width: 32px;
+            height: 32px;
+            color: white;
+            margin-left: 4px;
+        }
+
+        /* FAQ Section */
+        .bd-faq {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .blink-faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .blink-faq-item {
+            border: 1px solid var(--blink-border);
+            border-radius: 12px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: var(--blink-gray);
+        }
+
+        .blink-faq-item:hover {
+            border-color: var(--blink-green);
+        }
+
+        .blink-faq-item.active {
+            border-color: var(--blink-green);
+            box-shadow: 0 4px 20px rgba(0, 106, 78, 0.1);
+        }
+
+        .blink-faq-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 24px;
+            cursor: pointer;
+            background: white;
+            transition: background 0.3s ease;
+        }
+
+        .blink-faq-header:hover {
+            background: var(--blink-gray);
+        }
+
+        .blink-faq-question {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--blink-dark);
+            margin: 0;
+            padding-right: 20px;
+        }
+
+        .blink-faq-toggle {
+            width: 32px;
+            height: 32px;
+            background: rgba(0, 106, 78, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-toggle {
+            background: var(--blink-green);
+            transform: rotate(180deg);
+        }
+
+        .blink-faq-toggle svg {
+            width: 16px;
+            height: 16px;
+            color: var(--blink-green);
+            transition: color 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-toggle svg {
+            color: white;
+        }
+
+        .blink-faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .blink-faq-item.active .blink-faq-answer {
+            max-height: 500px;
+        }
+
+        .blink-faq-answer-content {
+            padding: 0 24px 24px;
+            font-size: 15px;
+            color: var(--blink-text);
+            line-height: 1.8;
+        }
+
+        /* Lazy Loading */
+        .blink-lazy {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .blink-lazy.loaded {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Skip to Main Content (Accessibility) -->
+    <a href="#features" class="blink-skip-link">Skip to main content</a>
+
+    <!-- Video Modal -->
+    <div class="blink-video-modal" id="videoModal">
+        <div class="blink-video-modal-overlay"></div>
+        <div class="blink-video-modal-content">
+            <button class="blink-video-modal-close" aria-label="Close video">&times;</button>
+            <div class="blink-video-modal-wrapper">
+                <iframe id="videoIframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="blink-page">
+        <!-- Navigation -->
+        <nav class="blink-nav" id="blink-nav">
+            <div class="blink-container">
+                <div class="blink-nav-inner">
+                    <a href="itb-pos-home.html" class="blink-logo">
+                        <div class="blink-logo-icon">B</div>
+                        <span class="blink-logo-text">ITB POS</span>
+                    </a>
+
+                    <ul class="blink-nav-menu">
+                        <li><a href="itb-pos.html">POS</a></li>
+                        <li class="has-dropdown">
+                            <a href="#">Products</a>
+                            <ul class="dropdown">
+                                <li><a href="itb-pos.html">POS System</a></li>
+                                <li><a href="#">Online Ordering</a></li>
+                                <li><a href="#">Delivery Management</a></li>
+                                <li><a href="#">Inventory</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Customers</a></li>
+                        <li><a href="itb-pos-home.html">Global</a></li>
+                    </ul>
+
+                    <div class="blink-nav-actions">
+                        <div class="blink-lang-switch">
+                            <button class="active">EN</button>
+                            <button>বাং</button>
+                        </div>
+                        <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-secondary">Get Demo</a>
+                        <a href="index.html" class="blink-btn blink-btn-primary">Back to ITB</a>
+                    </div>
+
+                    <button class="blink-menu-toggle" id="blink-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="blink-mobile-overlay" id="blink-mobile-overlay"></div>
+        <div class="blink-mobile-menu" id="blink-mobile-menu">
+            <button class="blink-mobile-menu-close" id="blink-mobile-close">&times;</button>
+            <ul>
+                <li><a href="itb-pos.html">POS</a></li>
+                <li><a href="#">Online Ordering</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="itb-pos-home.html">Global Site</a></li>
+                <li><a href="itb-pos-home.html#contact">Get Demo</a></li>
+                <li><a href="index.html">Back to ITB</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="bd-hero">
+            <div class="blink-container">
+                <div class="bd-hero-inner">
+                    <div class="bd-hero-content">
+                        <div class="bd-hero-badge">
+                            <span class="bd-hero-badge-flag"></span>
+                            Made for Bangladesh
+                        </div>
+                        <h1 class="blink-heading bd-hero-title">
+                            The #1 Restaurant POS System for <span>Bangladesh</span>
+                        </h1>
+                        <p class="bd-hero-text">
+                            Built specifically for Bangladeshi restaurants. Native bKash, Nagad, and Rocket integration. Full BDT support, VAT compliance, and Bengali language interface.
+                        </p>
+                        <div class="bd-hero-ctas">
+                            <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-primary blink-btn-large">
+                                Start Free Trial
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#features" class="blink-btn blink-btn-secondary blink-btn-large">
+                                See Features
+                            </a>
+                        </div>
+                        <div class="bd-hero-payments">
+                            <span class="bd-hero-payments-label">Payments:</span>
+                            <div class="bd-hero-payments-logos">
+                                <div class="bd-payment-logo">
+                                    <svg viewBox="0 0 60 30" fill="#E2136E"><text x="5" y="22" font-size="14" font-weight="bold">bKash</text></svg>
+                                </div>
+                                <div class="bd-payment-logo">
+                                    <svg viewBox="0 0 60 30" fill="#F5841F"><text x="5" y="22" font-size="14" font-weight="bold">Nagad</text></svg>
+                                </div>
+                                <div class="bd-payment-logo">
+                                    <svg viewBox="0 0 60 30" fill="#8E2F89"><text x="5" y="22" font-size="14" font-weight="bold">Rocket</text></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bd-hero-image">
+                        <span class="bd-popular-badge">Popular in Dhaka</span>
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="Bangladesh restaurant using ITB POS" class="blink-lazy" />
+                        <button class="blink-video-play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ" aria-label="Watch Bangladesh POS demo video">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Integration Section -->
+        <section class="blink-section bd-payments" id="payments">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">Payment Integration</span>
+                    <h2 class="blink-heading blink-section-title">Native Mobile Payment Support</h2>
+                    <p class="blink-section-text">
+                        Accept payments from Bangladesh's most popular mobile wallets with instant settlement and automatic reconciliation.
+                    </p>
+                </div>
+
+                <div class="bd-payments-grid">
+                    <!-- bKash -->
+                    <div class="bd-payment-card">
+                        <div class="bd-payment-card-logo bkash">bK</div>
+                        <h3 class="bd-payment-card-title">bKash Integration</h3>
+                        <p class="bd-payment-card-text">
+                            Accept bKash payments directly from your POS. QR code or number entry. Instant confirmation.
+                        </p>
+                        <ul class="bd-payment-card-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Direct merchant account integration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                QR code payment support
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Automatic settlement
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Real-time transaction reports
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Nagad -->
+                    <div class="bd-payment-card">
+                        <div class="bd-payment-card-logo nagad">N</div>
+                        <h3 class="bd-payment-card-title">Nagad Integration</h3>
+                        <p class="bd-payment-card-text">
+                            Accept Nagad payments seamlessly. Fast, secure, and government-backed digital payment.
+                        </p>
+                        <ul class="bd-payment-card-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Official Nagad merchant partner
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Instant payment confirmation
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Daily settlement to bank
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Transaction dispute handling
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Rocket -->
+                    <div class="bd-payment-card">
+                        <div class="bd-payment-card-logo rocket">R</div>
+                        <h3 class="bd-payment-card-title">Rocket Integration</h3>
+                        <p class="bd-payment-card-text">
+                            Accept Rocket payments from Dutch-Bangla Bank customers with full integration.
+                        </p>
+                        <ul class="bd-payment-card-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                DBBL merchant integration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Send/receive support
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Low transaction fees
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Bank account settlement
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Local Features Section -->
+        <section class="blink-section bd-features" id="features">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">Built for Bangladesh</span>
+                    <h2 class="blink-heading blink-section-title">Features Designed for Local Success</h2>
+                    <p class="blink-section-text">
+                        Every feature is tailored for the unique needs of Bangladeshi restaurants.
+                    </p>
+                </div>
+
+                <div class="bd-features-grid">
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>Bengali Language Interface</h3>
+                            <p>Full Bengali (বাংলা) language support for menus, receipts, and the entire interface. Your staff can work in the language they're most comfortable with.</p>
+                        </div>
+                    </div>
+
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>BDT Currency & VAT</h3>
+                            <p>Native Bangladesh Taka (৳) support with automatic VAT calculation. NBR-compliant invoicing and tax reporting built in.</p>
+                        </div>
+                    </div>
+
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>Foodpanda & Pathao Integration</h3>
+                            <p>Connect with Bangladesh's top food delivery platforms. Orders flow directly to your kitchen without manual entry.</p>
+                        </div>
+                    </div>
+
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>Local Support in Dhaka</h3>
+                            <p>Dedicated support team based in Dhaka. Get help in Bengali or English via phone, chat, or in-person training at your location.</p>
+                        </div>
+                    </div>
+
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>Works Offline</h3>
+                            <p>Keep taking orders even during internet outages (common in some areas). Everything syncs automatically when connection returns.</p>
+                        </div>
+                    </div>
+
+                    <div class="bd-feature-item">
+                        <div class="bd-feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <div class="bd-feature-content">
+                            <h3>Local Menu Templates</h3>
+                            <p>Pre-built menu templates for biriyani houses, Chinese restaurants, fast food, and local cuisine. Get started in minutes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="blink-section bd-stories" id="testimonials">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label" style="color: var(--blink-accent);">Success Stories</span>
+                    <h2 class="blink-heading blink-section-title">Trusted by Top Restaurants in Bangladesh</h2>
+                    <p class="blink-section-text">
+                        See how restaurants across Dhaka, Chittagong, and beyond are growing with ITB POS.
+                    </p>
+                </div>
+
+                <div class="bd-stories-grid">
+                    <div class="bd-story-card">
+                        <div class="bd-story-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Gulshan, Dhaka
+                        </div>
+                        <p class="bd-story-quote">
+                            "bKash integration alone increased our sales by 25%. Customers love the convenience of mobile payment. The Bengali interface makes training new staff so much easier."
+                        </p>
+                        <div class="bd-story-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Rahim Ahmed" class="bd-story-avatar">
+                            <div>
+                                <div class="bd-story-name">Rahim Ahmed</div>
+                                <div class="bd-story-business">Sultan's Dine</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bd-story-card">
+                        <div class="bd-story-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Chittagong
+                        </div>
+                        <p class="bd-story-quote">
+                            "We manage 4 locations from one dashboard. The VAT calculation is automatic - no more mistakes during tax filing. Best investment we've made for our chain."
+                        </p>
+                        <div class="bd-story-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Fatima Begum" class="bd-story-avatar">
+                            <div>
+                                <div class="bd-story-name">Fatima Begum</div>
+                                <div class="bd-story-business">Mezban Restaurant Chain</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bd-story-card">
+                        <div class="bd-story-location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            Dhanmondi, Dhaka
+                        </div>
+                        <p class="bd-story-quote">
+                            "The Foodpanda integration is a game changer. Orders come directly to our kitchen. No more missed orders or wrong items. Our delivery rating went from 4.2 to 4.8 stars."
+                        </p>
+                        <div class="bd-story-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop" alt="Kamal Hossain" class="bd-story-avatar">
+                            <div>
+                                <div class="bd-story-name">Kamal Hossain</div>
+                                <div class="bd-story-business">Kacchi Bhai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="bd-stats">
+            <div class="blink-container">
+                <div class="bd-stats-grid">
+                    <div class="bd-stat-card">
+                        <div class="bd-stat-value">500+</div>
+                        <div class="bd-stat-label">Restaurants in Bangladesh</div>
+                    </div>
+                    <div class="bd-stat-card">
+                        <div class="bd-stat-value">৳50Cr+</div>
+                        <div class="bd-stat-label">Monthly Transactions</div>
+                    </div>
+                    <div class="bd-stat-card">
+                        <div class="bd-stat-value">15</div>
+                        <div class="bd-stat-label">Cities Covered</div>
+                    </div>
+                    <div class="bd-stat-card">
+                        <div class="bd-stat-value">4.9</div>
+                        <div class="bd-stat-label">Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="blink-section bd-pricing" id="pricing">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">Pricing</span>
+                    <h2 class="blink-heading blink-section-title">Simple, Transparent Pricing in BDT</h2>
+                    <p class="blink-section-text">
+                        No hidden fees. No long-term contracts. Start free and upgrade when you're ready.
+                    </p>
+                </div>
+
+                <div class="bd-pricing-cards">
+                    <!-- Starter -->
+                    <div class="bd-pricing-card">
+                        <h3 class="bd-pricing-name">Starter</h3>
+                        <p class="bd-pricing-desc">Perfect for new restaurants</p>
+                        <div class="bd-pricing-price">
+                            <span class="bd-pricing-currency">৳</span>
+                            <span class="bd-pricing-amount">2,999</span>
+                            <span class="bd-pricing-period">/month</span>
+                        </div>
+                        <ul class="bd-pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                1 POS Terminal
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                bKash & Nagad
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Basic Reports
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Email Support
+                            </li>
+                        </ul>
+                        <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-secondary bd-pricing-btn">Get Started</a>
+                    </div>
+
+                    <!-- Professional -->
+                    <div class="bd-pricing-card featured">
+                        <span class="bd-pricing-badge">Most Popular</span>
+                        <h3 class="bd-pricing-name">Professional</h3>
+                        <p class="bd-pricing-desc">For growing restaurants</p>
+                        <div class="bd-pricing-price">
+                            <span class="bd-pricing-currency">৳</span>
+                            <span class="bd-pricing-amount">5,999</span>
+                            <span class="bd-pricing-period">/month</span>
+                        </div>
+                        <ul class="bd-pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Up to 3 POS Terminals
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                All Payment Methods
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Inventory Management
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Foodpanda Integration
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Phone & Chat Support
+                            </li>
+                        </ul>
+                        <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-primary bd-pricing-btn">Get Started</a>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="bd-pricing-card">
+                        <h3 class="bd-pricing-name">Enterprise</h3>
+                        <p class="bd-pricing-desc">For restaurant chains</p>
+                        <div class="bd-pricing-price">
+                            <span class="bd-pricing-amount">Custom</span>
+                        </div>
+                        <ul class="bd-pricing-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Unlimited Terminals
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Multi-Location Dashboard
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                API Access
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Custom Integrations
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Dedicated Account Manager
+                            </li>
+                        </ul>
+                        <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-secondary bd-pricing-btn">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bd-faq" id="faq">
+            <div class="blink-container">
+                <div class="blink-section-header">
+                    <span class="blink-section-label">FAQ</span>
+                    <h2 class="blink-heading blink-section-title">Frequently Asked Questions</h2>
+                    <p class="blink-section-text">
+                        Get answers to common questions about ITB POS in Bangladesh.
+                    </p>
+                </div>
+
+                <div class="blink-faq-list">
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">Does ITB POS support bKash payments?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Yes! ITB POS has native bKash merchant integration. You can accept payments via QR code scan or phone number entry. Transactions are confirmed instantly, and settlement to your bank account is automatic. We're an official bKash merchant partner.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">Is there Bengali language support?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Yes, ITB POS offers full Bengali (বাংলা) language support. The entire interface, menus, receipts, and reports can all be displayed in Bengali. Your staff can work in the language they're most comfortable with, reducing training time and errors.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">How does VAT compliance work?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                ITB POS automatically calculates VAT according to NBR (National Board of Revenue) guidelines. Invoices are generated in the required format for compliance. At tax time, you can export VAT reports that are ready for submission, making tax filing simple and error-free.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">Can I integrate with Foodpanda and Pathao?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Yes! ITB POS integrates with Bangladesh's top food delivery platforms including Foodpanda and Pathao Food. Orders from these platforms flow directly into your kitchen display system without manual entry, reducing errors and speeding up fulfillment.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">What if my internet connection is unreliable?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                ITB POS has a robust offline mode designed for areas with unreliable internet connectivity. When your connection goes down, the system continues working normally. All orders, payments, and data are stored locally and automatically sync to the cloud once connectivity is restored.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blink-faq-item">
+                        <div class="blink-faq-header" role="button" tabindex="0" aria-expanded="false">
+                            <h3 class="blink-faq-question">Do you have local support in Dhaka?</h3>
+                            <div class="blink-faq-toggle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="blink-faq-answer">
+                            <div class="blink-faq-answer-content">
+                                Yes! We have a dedicated support team based in Gulshan, Dhaka. Get help in Bengali or English via phone (+880 1712-345-678), live chat, or WhatsApp. For Professional and Enterprise plans, we also offer in-person training and setup at your restaurant location.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bd-cta">
+            <div class="blink-container">
+                <h2 class="blink-heading bd-cta-title">Ready to Modernize Your Restaurant?</h2>
+                <p class="bd-cta-text">
+                    Join 500+ restaurants in Bangladesh already using ITB POS. Start your free trial today - no credit card required.
+                </p>
+                <a href="itb-pos-home.html#contact" class="blink-btn blink-btn-large">
+                    Start Free Trial
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <p class="bd-cta-contact">
+                    Or call us at <a href="tel:+8801712345678">+880 1712-345-678</a> for a demo
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="blink-footer">
+            <div class="blink-container">
+                <div class="blink-footer-grid">
+                    <div class="blink-footer-brand">
+                        <a href="itb-pos-home.html" class="blink-logo">
+                            <div class="blink-logo-icon">B</div>
+                            <span class="blink-logo-text" style="color: white;">ITB POS</span>
+                        </a>
+                        <p>
+                            ITB POS is the #1 restaurant management platform in Bangladesh. Native mobile payment integration, Bengali language support, and local compliance built-in.
+                        </p>
+                        <div class="blink-footer-social">
+                            <a href="#" aria-label="Facebook">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Products</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="itb-pos.html">POS System</a></li>
+                            <li><a href="#">Online Ordering</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Inventory</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Company</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Support</h4>
+                        <ul class="blink-footer-links">
+                            <li><a href="faq.html">Help Center</a></li>
+                            <li><a href="#">Training</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="blink-footer-col">
+                        <h4>Contact</h4>
+                        <ul class="blink-footer-links">
+                            <li>+880 1712-345-678</li>
+                            <li>bd@itbpos.com</li>
+                            <li>Gulshan-2, Dhaka</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="blink-footer-bottom">
+                    <p class="blink-footer-copyright">
+                        &copy; 2025 ITB POS by InnovaTechBiz. All rights reserved.
+                    </p>
+                    <div class="blink-footer-legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sticky Navigation
+            const nav = document.getElementById('blink-nav');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // Mobile Menu Toggle
+            const menuToggle = document.getElementById('blink-menu-toggle');
+            const mobileMenu = document.getElementById('blink-mobile-menu');
+            const mobileOverlay = document.getElementById('blink-mobile-overlay');
+            const mobileClose = document.getElementById('blink-mobile-close');
+
+            function openMobileMenu() {
+                mobileMenu.classList.add('active');
+                mobileOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeMobileMenu() {
+                mobileMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            menuToggle.addEventListener('click', openMobileMenu);
+            mobileClose.addEventListener('click', closeMobileMenu);
+            mobileOverlay.addEventListener('click', closeMobileMenu);
+
+            // Smooth Scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            closeMobileMenu();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Language Switcher (placeholder)
+            const langButtons = document.querySelectorAll('.blink-lang-switch button');
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    langButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    // In production, this would switch the language
+                    if (this.textContent === 'বাং') {
+                        alert('Bengali language support coming soon!');
+                    }
+                });
+            });
+
+            // Scroll Animation
+            const observerOptions = { threshold: 0.1 };
+            const fadeInObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                        fadeInObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.bd-payment-card, .bd-feature-item, .bd-story-card, .bd-pricing-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                fadeInObserver.observe(card);
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.blink-faq-item');
+            faqItems.forEach(item => {
+                const header = item.querySelector('.blink-faq-header');
+
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.blink-faq-header').setAttribute('aria-expanded', 'false');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        item.classList.add('active');
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+
+                // Keyboard accessibility
+                header.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        header.click();
+                    }
+                });
+            });
+
+            // Video Modal
+            const videoModal = document.getElementById('videoModal');
+            const videoIframe = document.getElementById('videoIframe');
+            const videoPlayBtns = document.querySelectorAll('.blink-video-play-btn');
+            const videoModalClose = document.querySelector('.blink-video-modal-close');
+            const videoModalOverlay = document.querySelector('.blink-video-modal-overlay');
+
+            function openVideoModal(videoUrl) {
+                videoIframe.src = videoUrl + '?autoplay=1';
+                videoModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeVideoModal() {
+                videoIframe.src = '';
+                videoModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            videoPlayBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const videoUrl = btn.getAttribute('data-video');
+                    openVideoModal(videoUrl);
+                });
+            });
+
+            if (videoModalClose) {
+                videoModalClose.addEventListener('click', closeVideoModal);
+            }
+            if (videoModalOverlay) {
+                videoModalOverlay.addEventListener('click', closeVideoModal);
+            }
+
+            // Close video modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                    closeVideoModal();
+                }
+            });
+
+            // Lazy Loading for Images
+            const lazyImages = document.querySelectorAll('.blink-lazy');
+            const lazyObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('loaded');
+                        lazyObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1, rootMargin: '50px' });
+
+            lazyImages.forEach(img => {
+                lazyObserver.observe(img);
+            });
+        });
+    </script>
+</body>
+
+</html>
